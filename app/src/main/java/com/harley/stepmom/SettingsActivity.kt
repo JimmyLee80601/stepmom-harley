@@ -5,6 +5,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -33,7 +36,7 @@ class SettingsActivity : AppCompatActivity() {
             val service = LlmService(url)
             testButton.isEnabled = false
             testButton.text = "Testing..."
-            kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.Dispatchers.IO).launch {
+            lifecycleScope.launch(Dispatchers.IO) {
                 val ok = service.checkConnection()
                 runOnUiThread {
                     testButton.isEnabled = true
