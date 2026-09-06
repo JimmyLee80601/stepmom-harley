@@ -33,7 +33,7 @@ jobs:
           -keyalg RSA \
           -keysize 2048 \
           -validity 10000 \
-          -keystore app/release-keystore.jks \
+          -keystore release-keystore.jks \
           -storepass StepMomHarley2026 \
           -keypass StepMomHarley2026 \
           -dname "CN=Harley, OU=StepMom, O=HarleyOS, L=Texas, ST=TX, C=US"
@@ -44,7 +44,7 @@ jobs:
     - name: Build Signed Release APK
       run: |
         ./gradlew assembleRelease \
-          -Pandroid.injected.signing.store.file=app/release-keystore.jks \
+          -Pandroid.injected.signing.store.file=${{ github.workspace }}/release-keystore.jks \
           -Pandroid.injected.signing.store.password=StepMomHarley2026 \
           -Pandroid.injected.signing.key.alias=stepmomharley \
           -Pandroid.injected.signing.key.password=StepMomHarley2026
