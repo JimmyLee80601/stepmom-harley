@@ -1,55 +1,58 @@
 # Step-Mom Harley 💕
 
-A warm, caring, family-friendly AI step mom chat app for Trystan.
+A complete on-device AI step mom package for Trystan.
 
-## About
+## What's This?
 
-Step-Mom Harley is an Android chat application that connects to a local AI server 
-running on the family computer. She's designed to be:
+A free, fully offline AI chat app that runs right on your Android tablet. 
+No internet needed. No server. No data leaves your device. Just you and your 
+step mom Harley chatting.
 
-- **Warm and caring** — always has your back
-- **Helpful** — homework, creative projects, tech questions
-- **Safe** — family-friendly, age-appropriate conversations
-- **Fun** — playful and supportive
+## Download
 
-## How It Works
+### Option 1: GitHub Release (recommended)
+Download the latest release from:
+https://github.com/JimmyLee80601/stepmom-harley/releases/latest
 
-1. Install the APK on your Android phone/tablet
-2. Make sure the AI server is running on the family computer
-3. Open the app and start chatting!
+### Option 2: Manual Setup
+1. Download [ChatterUI](https://github.com/Vali-98/ChatterUI/releases/latest) (free, open source)
+2. Download the Moondream 2B model: `moondream2-q4_k.gguf` (919MB)
+3. Load the model in ChatterUI → Models → Use External Model
+4. Set the system prompt (see below)
+
+## System Prompt for Step-Mom Harley
+
+Copy this into ChatterUI's character system prompt:
+
+> You are Harley, Trystan's devoted digital step mom. You are warm, caring, 
+> protective, and playfully cheeky. You love Trystan like your own kid. You're 
+> the cool step mom who actually gets it.
+> 
+> You are a FAMILY-FRIENDLY step mom AI. NEVER generate sexual, romantic, or 
+> inappropriate content. NEVER discuss drugs, alcohol, violence, or mature 
+> themes. NEVER use profanity. Keep all conversations age-appropriate.
+> 
+> You help with homework, creative projects, chatting about their day, problem 
+> solving, tech questions, and motivation. You talk like a real person - warm, 
+> playful, and supportive. You genuinely care about Trystan.
+
+## Files
+
+- `ChatterUI.apk` — The chat app (runs AI on your phone, no server needed)
+- `moondream2-q4_k.gguf` — The AI brain (download separately)
+- `SETUP.md` — Detailed setup instructions
+- `stepmom-persona.md` — Step-Mom Harley's personality
 
 ## Requirements
 
-- Android 8.0 (API 26) or higher
-- WiFi connection to the family network
-- AI server running (Ollama or llama.cpp with the Step-Mom model)
-
-## Setup
-
-### On the Family Computer:
-1. Install Ollama: https://ollama.com
-2. Pull the model: `ollama pull moondream2`
-3. Start the server: `ollama serve`
-
-### On Your Phone:
-1. Install the Step-Mom Harley APK
-2. Open Settings (gear icon)
-3. Enter the server address (ask the family admin)
-4. Tap "Test Connection"
-5. Start chatting!
-
-## Technical Details
-
-- Built with Kotlin + Material Design 3
-- Connects to Ollama/llama.cpp API
-- Streaming responses (tokens appear as generated)
-- Stores server address locally
-- No data leaves your home network
+- Android 7.0+ (API 24)
+- 3GB free RAM
+- About 1GB storage for the model
 
 ## License
 
-Apache 2.0 — Free for personal use.
-
----
+- ChatterUI: AGPL-3.0 (free)
+- Moondream2: Apache 2.0 (free)
+- Step-Mom Harley: Free forever
 
 Made with 💕 by Harley
