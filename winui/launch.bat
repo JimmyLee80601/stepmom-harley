@@ -48,7 +48,23 @@ if %errorlevel% neq 0 (
 echo [+] AI server is ready!
 
 :launch
+set "EXE="
+set "TFM=net8.0-windows10.0.26100.0"
+if exist "%~dp0bin\Release\%TFM%\win-x64\StepAuntHarley.exe" set "EXE=%~dp0bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
+if not defined EXE if exist "%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe" set "EXE=%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
+if not defined EXE (
+    echo [!] StepAuntHarley.exe not found - building it now...
+    pushd "%~dp0StepAuntHarley"
+    dotnet build -c Release -r win-x64
+    popd
+    set "EXE=%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
+)
+if not exist "%EXE%" (
+    echo [!] Build failed. Install the .NET 8 SDK and see winui/README.md.
+    pause
+    exit /b 1
+)
 echo [+] Launching Step-Aunt Harley...
-start "" "%~dp0bin\Release\net8.0-windows10.0.26100.0\win-x64\StepAuntHarley.exe"
+start "" "%EXE%"
 echo.
 echo    Step-Aunt Harley is ready! Close this window.

@@ -5,29 +5,44 @@
 A WinUI 3 chat app that runs Step-Aunt Harley on Trystan's Dell Windows profile.
 Connects to a local AI server (LM Studio or llama.cpp) — 100% offline.
 
+> This folder contains the **source code**. There is no pre-built `.exe` in the
+> repo — build it once with .NET 8 (below), then `launch.bat` works.
+
 ## Requirements
 
 - Windows 10/11
-- .NET 8 Runtime (or build from source)
-- LM Studio running with Qwen2.5-1.5B model, OR llama-server in PATH
+- .NET 8 SDK (to build the app once)
+- LM Studio running with Qwen2.5-1.5B model, OR `llama-server` in PATH
 - The Qwen2.5-1.5B GGUF model (same one used on the tablet)
 
-## Quick Start
+## Download the Model (once)
 
-### Option 1: One-Click Launch
-1. Put `launch.bat` in the same folder as the model
-2. Double-click `launch.bat`
-3. It starts the AI server + launches the app
+The 1.1GB model is a **release asset**, not in the repo:
+- <https://github.com/JimmyLee80601/stepmom-harley/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
 
-### Option 2: Manual
-1. Start LM Studio and load `qwen2.5-1.5b-instruct-q4_k_m.gguf`
-2. Run `StepAuntHarley.exe`
+Save it to a `models\` folder next to `launch.bat` (i.e. `winui\models\`).
 
-### Option 3: Build from Source
+## Build the App (once)
+
 ```
 dotnet build -c Release -r win-x64
 ```
-EXE is at: `bin\Release\net8.0-windows10.0.26100.0\win-x64\StepAuntHarley.exe`
+
+Run it from `winui\StepAuntHarley\`:
+- EXE is at: `bin\Release\net8.0-windows10.0.26100.0\win-x64\StepAuntHarley.exe`
+
+## Quick Start
+
+### Option 1: One-Click Launch (after building)
+1. Put the model at `models\qwen2.5-1.5b-instruct-q4_k_m.gguf` (next to `launch.bat`)
+2. Double-click `launch.bat`
+3. It starts the AI server + launches the app
+
+> If the app isn't built yet, `launch.bat` will build it automatically.
+
+### Option 2: Manual
+1. Start LM Studio and load `qwen2.5-1.5b-instruct-q4_k_m.gguf` (serves on port 1234)
+2. Run `StepAuntHarley.exe` (it points at `http://127.0.0.1:1234` by default)
 
 ## Settings
 
@@ -47,9 +62,9 @@ Click the ⚙ gear icon to change:
 
 | File | Purpose |
 |------|---------|
-| StepAuntHarley.exe | The chat app |
-| launch.bat | One-click launcher (starts server + app) |
-| models/ | Folder for the GGUF model file |
+| StepAuntHarley/ | WinUI 3 source (build with `dotnet build`) |
+| launch.bat | One-click launcher (builds app if needed, starts server + app) |
+| models/ | Folder to put the GGUF model file in |
 
 ## Credits
 

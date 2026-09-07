@@ -5,12 +5,25 @@
 - The files from this package (on USB drive or downloaded)
 
 ## Files in This Package
-| File | What It Does |
-|------|-------------|
-| ChatterUI.apk | The app that runs the AI — no internet needed |
-| qwen2.5-1.5b-instruct-q4_k_m.gguf | The AI brain (1.1GB) |
-| system_prompt.txt | Step-Aunt Harley's personality |
-| SETUP.md | This guide |
+| File | Where It Comes From |
+|------|---------------------|
+| ChatterUI.apk | This repo (root folder) |
+| qwen2.5-1.5b-instruct-q4_k_m.gguf | Release v3.0 (1.1GB) — link in Step 0 |
+| system_prompt.txt | This repo (root folder) |
+| SETUP.md | This repo |
+
+## Step 0 — Download Everything First
+
+1. **Get the repo files** — click the green **Code ▾ → Download ZIP** on the
+   [repo page](https://github.com/JimmyLee80601/stepmom-harley). Extract it and
+   keep `ChatterUI.apk` and `system_prompt.txt`.
+2. **Get the AI model (1.1GB)** from Release v3.0:
+   - <https://github.com/JimmyLee80601/stepmom-harley/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
+   - Tip: download on a PC and copy over USB — saves tablet data.
+3. Copy these three files onto the tablet (or a USB drive):
+   - `ChatterUI.apk`
+   - `qwen2.5-1.5b-instruct-q4_k_m.gguf`
+   - `system_prompt.txt`
 
 ## Step-by-Step Setup (5 minutes)
 
@@ -22,8 +35,8 @@
 5. Done — you'll see the ChatterUI icon on your home screen
 
 ### 2. Copy the Model
-1. Copy `qwen2.5-1.5b-instruct-q4_k_m.gguf` from the USB drive to the tablet's **Download** folder
-2. That's it — just copy the one file
+1. Make sure `qwen2.5-1.5b-instruct-q4_k_m.gguf` is in the tablet's **Download** folder
+2. That's it — just the one file
 
 ### 3. Load the Model in ChatterUI
 1. Open **ChatterUI**
@@ -65,6 +78,7 @@
 |---------|-----|
 | Won't install APK | Settings → Security → Allow Unknown Sources |
 | Model won't load | Make sure .gguf file is in Download folder |
+| Model file missing | Download it from Release v3.0 (see Step 0) |
 | Responses are slow | Normal for first message, gets faster after |
 | App won't open | Restart the tablet, try again |
 | No sound | Check tablet volume settings |
