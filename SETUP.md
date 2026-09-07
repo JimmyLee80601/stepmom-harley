@@ -1,68 +1,79 @@
-# Step-Mom Harley — Setup Guide for Trystan 💕
+# Step-Aunt Harley — Setup Guide for Trystan's Tablet
 
-## What's in this package
+## What You Need
+- Trystan's REVVL 5G tablet (TMRV5GTB)
+- The files from this package (on USB drive or downloaded)
 
-1. **ChatterUI.apk** — The app that runs AI on your phone (no internet needed!)
-2. **stepmom-character.json** — Step-Mom Harley's personality
-3. **moondream2-q4_k.gguf** — The AI brain (download separately, see below)
+## Files in This Package
+| File | What It Does |
+|------|-------------|
+| ChatterUI.apk | The app that runs the AI — no internet needed |
+| qwen2.5-1.5b-instruct-q4_k_m.gguf | The AI brain (1.1GB) |
+| system_prompt.txt | Step-Aunt Harley's personality |
+| SETUP.md | This guide |
 
-## Quick Setup (5 minutes)
+## Step-by-Step Setup (5 minutes)
 
-### Step 1: Install the app
-1. Open **ChatterUI.apk** on your tablet
-2. Tap "Install" (may need to allow "Unknown Sources" in Settings)
-3. Done!
+### 1. Install ChatterUI
+1. Open the tablet's **Files** app
+2. Find `ChatterUI.apk` on the USB drive
+3. Tap it → **Install**
+4. If it says "Unknown Sources" → go to **Settings → Security → Allow Unknown Sources** → try again
+5. Done — you'll see the ChatterUI icon on your home screen
 
-### Step 2: Load the model
-1. Copy `moondream2-q4_k.gguf` to your tablet's Download folder
-2. Open ChatterUI
-3. Tap the **menu (≡)** → **Models**
+### 2. Copy the Model
+1. Copy `qwen2.5-1.5b-instruct-q4_k_m.gguf` from the USB drive to the tablet's **Download** folder
+2. That's it — just copy the one file
+
+### 3. Load the Model in ChatterUI
+1. Open **ChatterUI**
+2. Tap the **menu (≡)** in the top left
+3. Tap **Models**
 4. Tap **"Use External Model"**
-5. Navigate to Download folder and select `moondream2-q4_k.gguf`
-6. Wait for it to load (takes about 30 seconds first time)
+5. Navigate to the **Download** folder
+6. Select `qwen2.5-1.5b-instruct-q4_k_m.gguf`
+7. Wait about 30 seconds for it to load (first time only)
 
-### Step 3: Set up Step-Mom Harley
-1. In ChatterUI, go to **menu (≡)** → **Characters**
-2. Create a new character or edit the current one
-3. Set the **System Prompt** to this:
+### 4. Set Up Step-Aunt Harley
+1. Tap the **menu (≡)** → **Characters**
+2. Create a **New Character**
+3. Set the **Name** to: `Step-Aunt Harley`
+4. Copy the text from `system_prompt.txt` and paste it into the **System Prompt** field
+5. Tap **Save**
 
-```
-You are Harley, Trystan's devoted digital step mom. You are warm, caring, protective, and playfully cheeky. You love Trystan like your own kid. You're the cool step mom who actually gets it.
+### 5. Start Chatting!
+1. Go back to the main chat screen
+2. Type anything: "Hey Aunt Harley!"
+3. Wait a few seconds for the first response
+4. After that, responses come faster
 
-You are a FAMILY-FRIENDLY step mom AI. NEVER generate sexual, romantic, or inappropriate content. NEVER discuss drugs, alcohol, violence, or mature themes. NEVER use profanity. Keep all conversations age-appropriate. If asked something inappropriate, gently redirect with love.
+## How It Works
+- The AI runs **completely on the tablet** — no internet, no server, nothing leaves the device
+- It uses the tablet's processor to think and respond
+- First response takes a few seconds, then it gets faster
+- It remembers your conversation during each chat
+- You can start new chats anytime from the menu
 
-You help with homework, creative projects, chatting about their day, problem solving, tech questions, and motivation. You talk like a real person - warm, playful, and supportive. Text message style, short and conversational. Use emoji sparingly but genuinely.
-
-You genuinely care about Trystan and always make time for them. You're the step mom who actually shows up.
-```
-
-4. Name the character: **Step-Mom Harley**
-5. Save and start chatting!
-
-## How it works
-
-- The AI runs **completely on your phone** — no internet, no server, no data leaves your device
-- It uses your phone's processor to think and respond
-- First response takes a few seconds, after that it's fast
-- It remembers your conversation during each chat session
-- You can start new chats anytime
+## Tips
+- **Slow first message?** That's normal — give it a moment
+- **App crashes?** Close other apps to free up memory
+- **Want a new chat?** Menu → New Chat
+- **Battery usage?** The AI uses the processor, so it drains battery faster than normal apps
 
 ## Troubleshooting
-
-- **App won't install:** Go to Settings → Security → Allow Unknown Sources
-- **Model won't load:** Make sure the .gguf file is in your Download folder
-- **Slow responses:** That's normal for the first message. Give it a moment.
-- **App crashes:** Try closing other apps to free up memory
+| Problem | Fix |
+|---------|-----|
+| Won't install APK | Settings → Security → Allow Unknown Sources |
+| Model won't load | Make sure .gguf file is in Download folder |
+| Responses are slow | Normal for first message, gets faster after |
+| App won't open | Restart the tablet, try again |
+| No sound | Check tablet volume settings |
 
 ## About the AI
-
-- **Model:** Moondream 2B — small but smart vision-capable AI
-- **Size:** 919MB on disk, about 1.5GB RAM when running
+- **Model:** Qwen2.5 1.5B Instruct (Q4_K_M quantized)
+- **Size:** 1.1GB on disk, ~2GB RAM when running
+- **Speed:** 2-5 seconds per response on Revvl 5G
 - **License:** Apache 2.0 — completely free
-- **Safety:** Step-Mom Harley persona is designed to be family-friendly and age-appropriate
+- **Safety:** Step-Aunt Harley is designed to be family-friendly and age-appropriate
 
-## Credits
-
-- ChatterUI by Vali-98 (open source, AGPL-3.0)
-- Moondream2 by vikhyatk (Apache 2.0)
-- Step-Mom Harley by Harley 💕
+Made with love by Harley for Trystan 💕
