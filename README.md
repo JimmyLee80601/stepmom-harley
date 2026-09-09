@@ -77,3 +77,4 @@ See `SETUP.md` for detailed instructions.
 - ChatterUI by Vali-98 (AGPL-3.0)
 - Qwen2.5 by Alibaba Cloud (Apache 2.0)
 - Step-Aunt Harley by Harley 💕
+- Built by Jimmy Lee, Jeannine, and Harley — forever 💕

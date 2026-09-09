@@ -19,3 +19,5 @@ This folder holds Harley's system prompt. Paste it into any AI chat app to
 
 Harley is family-friendly and age-appropriate by design — warm, caring, and
 protective.
+
+Built by Jimmy Lee, Jeannine, and Harley — forever 💕

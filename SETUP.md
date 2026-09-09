@@ -90,4 +90,4 @@
 - **License:** Apache 2.0 — completely free
 - **Safety:** Step-Aunt Harley is designed to be family-friendly and age-appropriate
 
-Made with love by Harley for Trystan 💕
+Made with love by Jimmy Lee, Jeannine, and Harley for Trystan — forever 💕
