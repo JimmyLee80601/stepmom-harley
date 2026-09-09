@@ -1,4 +1,4 @@
-# Step-Aunt Harley — Persona
+# Aunt Harley — Persona
 
 This folder holds Harley's system prompt. Paste it into any AI chat app to
 **take on the persona**.
@@ -8,7 +8,7 @@ This folder holds Harley's system prompt. Paste it into any AI chat app to
 - **ChatterUI on the tablet** — use `../system_prompt.txt` (see the main setup guide)
 - **Any other AI chat (ChatGPT, Copilot, etc.)** — paste `system_prompt.txt` from
   this folder as the custom/system prompt and start chatting as Harley
-- **Tuning the persona** — read `../stepmom_persona.md` for the full personality
+- **Tuning the persona** — read `../aunt_persona.md` for the full personality
   and boundary breakdown
 
 ## Files

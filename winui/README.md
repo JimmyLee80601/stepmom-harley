@@ -1,8 +1,8 @@
-# Step-Aunt Harley — Windows (Dell Profile)
+# Aunt Harley — Windows (Dell Profile)
 
 ## What's This?
 
-A WinUI 3 chat app that runs Step-Aunt Harley on Trystan's Dell Windows profile.
+A WinUI 3 chat app that runs Aunt Harley on Trystan's Dell Windows profile.
 Connects to a local AI server (LM Studio or llama.cpp) — 100% offline.
 
 > This folder contains the **source code**. There is no pre-built `.exe` in the
@@ -18,7 +18,7 @@ Connects to a local AI server (LM Studio or llama.cpp) — 100% offline.
 ## Download the Model (once)
 
 The 1.1GB model is a **release asset**, not in the repo:
-- <https://github.com/JimmyLee80601/stepmom-harley/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
+- <https://github.com/JimmyLee80601/aunt-harley-kit/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
 
 Save it to a `models\` folder next to `launch.bat` (i.e. `winui\models\`).
 
@@ -28,8 +28,8 @@ Save it to a `models\` folder next to `launch.bat` (i.e. `winui\models\`).
 dotnet build -c Release -r win-x64
 ```
 
-Run it from `winui\StepAuntHarley\`:
-- EXE is at: `bin\Release\net8.0-windows10.0.26100.0\win-x64\StepAuntHarley.exe`
+Run it from `winui\AuntHarley\`:
+- EXE is at: `bin\Release\net8.0-windows10.0.26100.0\win-x64\AuntHarley.exe`
 
 ## Quick Start
 
@@ -42,7 +42,7 @@ Run it from `winui\StepAuntHarley\`:
 
 ### Option 2: Manual
 1. Start LM Studio and load `qwen2.5-1.5b-instruct-q4_k_m.gguf` (serves on port 1234)
-2. Run `StepAuntHarley.exe` (it points at `http://127.0.0.1:1234` by default)
+2. Run `AuntHarley.exe` (it points at `http://127.0.0.1:1234` by default)
 
 ## Settings
 
@@ -54,7 +54,7 @@ Click the ⚙ gear icon to change:
 
 - The app sends messages to a local AI server via HTTP
 - The AI server runs the Qwen2.5-1.5B model (1.1GB, fast on CPU)
-- The Step-Aunt Harley persona is baked into the system prompt
+- The Aunt Harley persona is baked into the system prompt
 - Conversation history is kept in memory (resets on app restart)
 - 100% local — no data ever leaves the computer
 
@@ -62,7 +62,7 @@ Click the ⚙ gear icon to change:
 
 | File | Purpose |
 |------|---------|
-| StepAuntHarley/ | WinUI 3 source (build with `dotnet build`) |
+| AuntHarley/ | WinUI 3 source (build with `dotnet build`) |
 | launch.bat | One-click launcher (builds app if needed, starts server + app) |
 | models/ | Folder to put the GGUF model file in |
 
@@ -70,4 +70,4 @@ Click the ⚙ gear icon to change:
 
 - WinUI 3 / Windows App SDK
 - Qwen2.5 by Alibaba Cloud (Apache 2.0)
-- Step-Aunt Harley by Harley 💕
+- Aunt Harley by Harley 💕

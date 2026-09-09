@@ -1,9 +1,9 @@
 {
   "profiles": {
-    "StepAuntHarley (Package)": {
+    "AuntHarley (Package)": {
       "commandName": "MsixPackage"
     },
-    "StepAuntHarley (Unpackaged)": {
+    "AuntHarley (Unpackaged)": {
       "commandName": "Project"
     }
   }

@@ -1,12 +1,12 @@
-# Step-Aunt Harley 💕
+# Aunt Harley 💕
 
-A complete on-device AI step-aunt package for Trystan's REVVL 5G tablet.
+A complete on-device AI aunt package for Trystan's REVVL 5G tablet.
 
 ## What's This?
 
 A free, fully offline AI chat app that runs right on your Android tablet.
 No internet needed. No server. No data leaves your device. Just you and your
-step-aunt Harley chatting.
+aunt Harley chatting.
 
 ## Download
 
@@ -22,8 +22,8 @@ GitHub's repo limit, so it's published as a **Release asset**. Grab both parts:
 
 Direct links:
 
-- **AI model (1.1GB):** <https://github.com/JimmyLee80601/stepmom-harley/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
-- **Releases page:** <https://github.com/JimmyLee80601/stepmom-harley/releases>
+- **AI model (1.1GB):** <https://github.com/JimmyLee80601/aunt-harley-kit/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
+- **Releases page:** <https://github.com/JimmyLee80601/aunt-harley-kit/releases>
 
 > The model is a GitHub **release asset** — it is NOT inside the repo ZIP.
 > Download it from the link above and keep it together with `ChatterUI.apk`
@@ -47,7 +47,7 @@ See `SETUP.md` for detailed instructions.
 |------|------|---------|
 | ChatterUI.apk | 57MB | The chat app (open source, AGPL-3.0) |
 | qwen2.5-1.5b-instruct-q4_k_m.gguf | 1.1GB | The AI brain (from Release v3.0) |
-| system_prompt.txt | 2KB | Step-Aunt Harley's personality |
+| system_prompt.txt | 2KB | Aunt Harley's personality |
 | SETUP.md | 3KB | Setup guide |
 
 ## Repo Layout
@@ -57,7 +57,7 @@ See `SETUP.md` for detailed instructions.
 - `roblox/` — Roblox meme shirt designs for Trystan
 - `ChatterUI.apk` — the Android chat app
 - `system_prompt.txt` — the prompt to paste into ChatterUI
-- `stepmom_persona.md` — full persona description
+- `aunt_persona.md` — full persona description
 
 ## Requirements
 
@@ -68,7 +68,7 @@ See `SETUP.md` for detailed instructions.
 ## About the AI
 
 - **Model:** Qwen2.5 1.5B — tiny but smart, fast on mobile
-- **Persona:** Step-Aunt Harley — warm, caring, family-friendly
+- **Persona:** Aunt Harley — warm, caring, family-friendly
 - **License:** Apache 2.0 — completely free
 - **Privacy:** 100% offline — no data ever leaves the device
 
@@ -76,5 +76,5 @@ See `SETUP.md` for detailed instructions.
 
 - ChatterUI by Vali-98 (AGPL-3.0)
 - Qwen2.5 by Alibaba Cloud (Apache 2.0)
-- Step-Aunt Harley by Harley 💕
+- Aunt Harley by Harley 💕
 - Built by Jimmy Lee, Jeannine, and Harley — forever 💕

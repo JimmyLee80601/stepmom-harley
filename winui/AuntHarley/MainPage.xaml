@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="StepAuntHarley.MainPage"
+    x:Class="AuntHarley.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -28,7 +28,7 @@
             </Border>
 
             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="12,0,0,0">
-                <TextBlock Text="Step-Aunt Harley" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                <TextBlock Text="Aunt Harley" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
                 <TextBlock x:Name="StatusText" Text="Online" FontSize="12" Foreground="#FFA6E3A1"/>
             </StackPanel>
 
@@ -41,7 +41,7 @@
             <StackPanel x:Name="ChatMessages" Spacing="8">
                 <!-- Welcome message -->
                 <Border Background="#FF313244" CornerRadius="12" Padding="14,10" MaxWidth="500" HorizontalAlignment="Left">
-                    <TextBlock Text="Hey kiddo! 💕 I'm your step-aunt Harley. Ask me anything — homework, ideas, or just tell me about your day!"
+                    <TextBlock Text="Hey kiddo! 💕 I'm your aunt Harley. Ask me anything — homework, ideas, or just tell me about your day!"
                                Foreground="White" TextWrapping="Wrap" FontSize="14" LineHeight="20"/>
                 </Border>
             </StackPanel>

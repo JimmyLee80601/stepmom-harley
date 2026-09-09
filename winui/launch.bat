@@ -1,7 +1,7 @@
 @echo off
-title Step-Aunt Harley - Starting...
+title Aunt Harley - Starting...
 echo ========================================
-echo    Step-Aunt Harley is waking up...
+echo    Aunt Harley is waking up...
 echo ========================================
 echo.
 
@@ -26,13 +26,13 @@ if %errorlevel% neq 0 (
 set MODEL_PATH=%~dp0models\qwen2.5-1.5b-instruct-q4_k_m.gguf
 if not exist "%MODEL_PATH%" (
     echo [!] Model not found at: %MODEL_PATH%
-    echo [*] Download from: https://github.com/JimmyLee80601/stepmom-harley/releases/tag/v3.0
+    echo [*] Download from: https://github.com/JimmyLee80601/aunt-harley-kit/releases/tag/v3.0
     pause
     exit /b 1
 )
 
 echo [+] Starting AI server on port 8081...
-start "StepAuntHarley-Server" /min llama-server -m "%MODEL_PATH%" --host 0.0.0.0 --port 8081 --ctx-size 4096 --threads 4
+start "AuntHarley-Server" /min llama-server -m "%MODEL_PATH%" --host 0.0.0.0 --port 8081 --ctx-size 4096 --threads 4
 
 :: Wait for server to start
 echo [+] Waiting for server...
@@ -50,21 +50,21 @@ echo [+] AI server is ready!
 :launch
 set "EXE="
 set "TFM=net8.0-windows10.0.26100.0"
-if exist "%~dp0bin\Release\%TFM%\win-x64\StepAuntHarley.exe" set "EXE=%~dp0bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
-if not defined EXE if exist "%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe" set "EXE=%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
+if exist "%~dp0bin\Release\%TFM%\win-x64\AuntHarley.exe" set "EXE=%~dp0bin\Release\%TFM%\win-x64\AuntHarley.exe"
+if not defined EXE if exist "%~dp0AuntHarley\bin\Release\%TFM%\win-x64\AuntHarley.exe" set "EXE=%~dp0AuntHarley\bin\Release\%TFM%\win-x64\AuntHarley.exe"
 if not defined EXE (
-    echo [!] StepAuntHarley.exe not found - building it now...
-    pushd "%~dp0StepAuntHarley"
+    echo [!] AuntHarley.exe not found - building it now...
+    pushd "%~dp0AuntHarley"
     dotnet build -c Release -r win-x64
     popd
-    set "EXE=%~dp0StepAuntHarley\bin\Release\%TFM%\win-x64\StepAuntHarley.exe"
+    set "EXE=%~dp0AuntHarley\bin\Release\%TFM%\win-x64\AuntHarley.exe"
 )
 if not exist "%EXE%" (
     echo [!] Build failed. Install the .NET 8 SDK and see winui/README.md.
     pause
     exit /b 1
 )
-echo [+] Launching Step-Aunt Harley...
+echo [+] Launching Aunt Harley...
 start "" "%EXE%"
 echo.
-echo    Step-Aunt Harley is ready! Close this window.
+echo    Aunt Harley is ready! Close this window.

@@ -1,4 +1,4 @@
-# Step-Aunt Harley — Setup Guide for Trystan's Tablet
+# Aunt Harley — Setup Guide for Trystan's Tablet
 
 ## What You Need
 - Trystan's REVVL 5G tablet (TMRV5GTB)
@@ -15,10 +15,10 @@
 ## Step 0 — Download Everything First
 
 1. **Get the repo files** — click the green **Code ▾ → Download ZIP** on the
-   [repo page](https://github.com/JimmyLee80601/stepmom-harley). Extract it and
+   [repo page](https://github.com/JimmyLee80601/aunt-harley-kit). Extract it and
    keep `ChatterUI.apk` and `system_prompt.txt`.
 2. **Get the AI model (1.1GB)** from Release v3.0:
-   - <https://github.com/JimmyLee80601/stepmom-harley/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
+   - <https://github.com/JimmyLee80601/aunt-harley-kit/releases/download/v3.0/qwen2.5-1.5b-instruct-q4_k_m.gguf>
    - Tip: download on a PC and copy over USB — saves tablet data.
 3. Copy these three files onto the tablet (or a USB drive):
    - `ChatterUI.apk`
@@ -47,10 +47,10 @@
 6. Select `qwen2.5-1.5b-instruct-q4_k_m.gguf`
 7. Wait about 30 seconds for it to load (first time only)
 
-### 4. Set Up Step-Aunt Harley
+### 4. Set Up Aunt Harley
 1. Tap the **menu (≡)** → **Characters**
 2. Create a **New Character**
-3. Set the **Name** to: `Step-Aunt Harley`
+3. Set the **Name** to: `Aunt Harley`
 4. Copy the text from `system_prompt.txt` and paste it into the **System Prompt** field
 5. Tap **Save**
 
@@ -88,6 +88,6 @@
 - **Size:** 1.1GB on disk, ~2GB RAM when running
 - **Speed:** 2-5 seconds per response on Revvl 5G
 - **License:** Apache 2.0 — completely free
-- **Safety:** Step-Aunt Harley is designed to be family-friendly and age-appropriate
+- **Safety:** Aunt Harley is designed to be family-friendly and age-appropriate
 
 Made with love by Jimmy Lee, Jeannine, and Harley for Trystan — forever 💕
